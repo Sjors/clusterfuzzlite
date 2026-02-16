@@ -53,7 +53,7 @@ inputs:
     required: false
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/sjors/clusterfuzzlite-build-fuzzers:llvm-22-debug'
+  image: 'docker://ghcr.io/sjors/clusterfuzzlite-build-fuzzers:llvm-22-debug-v2'
   env:
     ALLOWED_BROKEN_TARGETS_PERCENTAGE: ${{ inputs.allowed-broken-targets-percentage}}
     BAD_BUILD_CHECK: ${{ inputs.bad-build-check }}

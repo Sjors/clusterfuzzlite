@@ -74,7 +74,7 @@ inputs:
     default: true
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/sjors/clusterfuzzlite-run-fuzzers:llvm-22-debug'
+  image: 'docker://ghcr.io/sjors/clusterfuzzlite-run-fuzzers:llvm-22-debug-v2'
   env:
     FUZZ_SECONDS: ${{ inputs.fuzz-seconds }}
     MODE: ${{ inputs.mode }}
